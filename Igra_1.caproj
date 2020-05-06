@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>v8kmxq05th81</unique-id>
+    <saved-with-version>27700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1136</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="set3_background" sid="503083541321785">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406580513487155" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Backgrounds\set3_background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set1_tiles" sid="385626008688865">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="736493868388994" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500805" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Backgrounds\set1_tiles.png">
+                        <collision-poly>
+                            <point x="0.100352" y="0.183575" />
+                            <point x="0.5" y="0.041868" />
+                            <point x="0.757923" y="0.442834" />
+                            <point x="1" y="0.499195" />
+                            <point x="0.877641" y="0.776167" />
+                            <point x="0.5" y="0.644122" />
+                            <point x="0.0228873" y="0.958132" />
+                            <point x="0" y="0.499195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set3_tiles" sid="798357045651639">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235523744319157" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500805" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Backgrounds\set3_tiles.png">
+                        <collision-poly>
+                            <point x="0.100352" y="0.183575" />
+                            <point x="0.5" y="0.041868" />
+                            <point x="0.757923" y="0.442834" />
+                            <point x="1" y="0.499195" />
+                            <point x="0.877641" y="0.776167" />
+                            <point x="0.5" y="0.644122" />
+                            <point x="0.0228873" y="0.958132" />
+                            <point x="0" y="0.499195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set3_hills" sid="289897652727856">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305733322774527" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Backgrounds\set3_hills.png">
+                        <collision-poly>
+                            <point x="0.355236" y="0.720833" />
+                            <point x="0.749487" y="0.508333" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set3_tiles2" sid="304076878221681">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="514116915502830" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500805" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Backgrounds\set3_tiles.png">
+                        <collision-poly>
+                            <point x="0.100352" y="0.183575" />
+                            <point x="0.5" y="0.041868" />
+                            <point x="0.757923" y="0.442834" />
+                            <point x="1" y="0.499195" />
+                            <point x="0.877641" y="0.776167" />
+                            <point x="0.5" y="0.644122" />
+                            <point x="0.0228873" y="0.958132" />
+                            <point x="0" y="0.499195" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="set3_hills2" sid="128387905737668">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="854236391877771" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Backgrounds\set3_hills.png">
+                        <collision-poly>
+                            <point x="0.355236" y="0.720833" />
+                            <point x="0.749487" y="0.508333" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="732545849608733">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="509141119771482">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_03.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="907750928082269">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="165469637215783">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+        </object-type>
+        <object-type name="playerRed_stand" sid="271722138275590">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="heart" sid="282584640184407" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="795778402278418">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="886728654017384">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="940663794073221">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="962752101920391" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_stand.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="991902487217779" speed="8">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk1.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk2.png" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk3.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="431176795653907" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_up2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="949844199153495" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_fall.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="860871959767849" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_dead.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="930847652937123">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="tileGreen_" sid="258031307723580">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="922710477305846">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="381735229030894" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_24.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.359375" y="0.640625" />
+                            <point x="0.140625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_25.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.859375" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.703125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_2" sid="386198162896848">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="301555172522978">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="584847285867863" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_06.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_3" sid="825784751308571">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="787904340611985">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320926307108932" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_04.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_4" sid="960686329806380">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="235028512247880">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="863532275878344" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_07.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyFloating_" sid="376526022890984">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351787279627987" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_1.png">
+                        <collision-poly>
+                            <point x="0.0238095" y="0.025" />
+                            <point x="0.97619" y="0.025" />
+                            <point x="0.97619" y="0.975" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0238095" y="0.975" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyFlying_" sid="234284047795169">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="950864179582062">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="898271965841313">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="208307494314920">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="860394310991836" speed="8">
+                    <frame duration="1" hotspotX="0.53125" hotspotY="0.552632" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_1.png">
+                        <collision-poly>
+                            <point x="0.109375" y="0.184211" />
+                            <point x="0.5" y="0.368421" />
+                            <point x="0.890625" y="0.184211" />
+                            <point x="0.734375" y="0.5" />
+                            <point x="0.734375" y="0.552632" />
+                            <point x="0.5" y="1" />
+                            <point x="0.265625" y="0.552632" />
+                            <point x="0.265625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_2.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.368421" />
+                            <point x="0.78125" y="0.368421" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.734375" y="0.552632" />
+                            <point x="0.5" y="1" />
+                            <point x="0.265625" y="0.552632" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_3.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.418605" />
+                            <point x="0.5" y="0.325581" />
+                            <point x="0.71875" y="0.418605" />
+                            <point x="0.734375" y="0.488372" />
+                            <point x="0.734375" y="0.604651" />
+                            <point x="0.5" y="0.883721" />
+                            <point x="0.265625" y="0.604651" />
+                            <point x="0.265625" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="129862455422137" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyFlying_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemyWalking_" sid="414304196906820">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="move" sid="518246525842792" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="410816777825885">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="196439154937731">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="850779098185693" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyWalking_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyWalking_2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="793581138466420" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="1" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemyWalking_4.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_5" sid="719084762751088">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="515040994510753">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="253910716721709" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_15.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.953125" />
+                            <point x="0.203125" y="0.796875" />
+                            <point x="0.015625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_16.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.796875" y="0.796875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_6" sid="585280958180981">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577008399753026" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_09.png">
+                        <collision-poly>
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.5" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_7" sid="248573268702779">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="321489795804936">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="540078034795011" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_18.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_8" sid="293448469152916">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="612291861020048">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491704463577686" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_11.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemySwimming_" sid="129650326633139">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="665483610630418">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="310760047160714" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_1.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_2.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Enemies\enemySwimming_3.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="blueGem" sid="840042632214925">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573572340380467" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Items\blueGem.png">
+                        <collision-poly>
+                            <point x="0.181818" y="0.181818" />
+                            <point x="0.5" y="0" />
+                            <point x="0.818182" y="0.181818" />
+                            <point x="1" y="0.5" />
+                            <point x="0.818182" y="0.818182" />
+                            <point x="0.5" y="1" />
+                            <point x="0.181818" y="0.818182" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gems" sid="892702883246224">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="541018587304602" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\extra\Gems.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.188679" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854839" y="0.169811" />
+                            <point x="1" y="0.490566" />
+                            <point x="0.806452" y="0.773585" />
+                            <point x="0.5" y="1" />
+                            <point x="0.209677" y="0.754717" />
+                            <point x="0.0322581" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="866022819514584">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="SpriteFont2" sid="474782541581451">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Text" sid="560806007165376">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="type" sid="972968773100390" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="hudHeart_full" sid="192387125703650">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="211233154236197" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.509434" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\extra\hudHeart_full.png">
+                        <collision-poly>
+                            <point x="0.0819672" y="0.0943396" />
+                            <point x="0.491803" y="0.0754717" />
+                            <point x="0.918033" y="0.0943396" />
+                            <point x="0.967213" y="0.490566" />
+                            <point x="0.786885" y="0.754717" />
+                            <point x="0.491803" y="0.981132" />
+                            <point x="0.213115" y="0.754717" />
+                            <point x="0.0327869" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bonus" sid="885819005768315">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="117221268676585">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="710043600263669">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="416222161348679" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\extra\bonus.png">
+                        <collision-poly>
+                            <point x="0.18" y="0.25" />
+                            <point x="0.5" y="0.166667" />
+                            <point x="0.92" y="0.111111" />
+                            <point x="0.96" y="0.5" />
+                            <point x="0.96" y="0.944444" />
+                            <point x="0.5" y="0.944444" />
+                            <point x="0.16" y="0.777778" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flagGreen_up" sid="189167657546714">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="963445005344270" speed="5">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.508197" original-source="C:\Users\nikag\Downloads\platformer-assets\Platformer\Abstract Platformer\PNG\Other\flagGreen_up.png">
+                        <collision-poly>
+                            <point x="0.0338983" y="0.0327869" />
+                            <point x="0.491525" y="0.163934" />
+                            <point x="0.711864" y="0.278689" />
+                            <point x="0.135593" y="0.491803" />
+                            <point x="0.40678" y="0.42623" />
+                            <point x="0.491525" y="0.42623" />
+                            <point x="0.0169492" y="0.983607" />
+                            <point x="0" y="0.491803" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
